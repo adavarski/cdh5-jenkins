@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+      <property>
+        <name>hive.metastore.warehouse.dir</name>
+        <value>/home/local/hive-metastore-dir/warehouse</value>
+
+      </property>
+
+	<property>
+  <name>hive.server2.thrift.port</name>
+  <value>10001</value>
+  <description>TCP port number to listen on, default 10000</description>
+</property>
+      </configuration>
+
