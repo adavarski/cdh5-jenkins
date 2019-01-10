@@ -9,16 +9,8 @@ pipeline {
     
    
        stage ('Checkout') {
-	        steps {
-				checkout([
-				$class: 'GitSCM', 
-				branches: [[name: '*/master']], 
-				doGenerateSubmoduleConfigurations: false,   
-				extensions: [], 
-				submoduleCfg: [], 
-				userRemoteConfigs: [[credentialsId: '', url: 'https://github.houston.entsvcs.net/GFAnalytics/CDH5-Jenkins-Agent-Docker']]]) 
+	        checkout scm
 	        }
-        }
 		
 		stage ('Build') {
 		steps {
